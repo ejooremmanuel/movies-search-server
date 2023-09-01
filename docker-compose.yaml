@@ -1,0 +1,11 @@
+version: "v3"
+
+services:
+  server:
+    image: itguru2023/moviessearchserver
+    working_dir: /app
+    container_name: movie-search-api
+    ports:
+      - 5500:6500
+    env_file: .env
+    command: ["npm", "run", "start:dev"]
