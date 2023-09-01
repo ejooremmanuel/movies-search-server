@@ -2,20 +2,27 @@ import express from "express";
 import logger from "morgan";
 import "colors";
 import { appRouter } from "./routes/index.routes";
+import { connectDB } from "./config/db";
+import cors from "cors";
 
 const app = express();
 
 app.use(express.json());
-app.use(logger("dev"));
-
+if (process.env.NODE_ENV === "development") app.use(logger("dev"));
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 app.use("/api/v1/movies/", appRouter);
 
-const PORT = process.env.PORT || 5000;
-const server = app.listen(PORT, () =>
+const PORT = process.env.PORT || "5000";
+const server = app.listen(PORT, async () => {
   console.log(
     `Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow
-  )
-);
+  );
+  await connectDB();
+});
 
 //Handle unhandled promise rejections
 process.on("unhandledRejection", (err: Error, promise) => {
