@@ -46,3 +46,7 @@ npm install
 ```bash
 docker-compose up -d
 ```
+
+# Usage
+
+The React front end is available at http://localhost:6700.
