@@ -1,0 +1,30 @@
+# My Project
+
+This is a project template for building a web application using React for the front end, Node.js for the back end, and Docker for containerization. The application runs on port 6700.
+
+## Getting Started
+
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+To run this project, you will need:
+
+- [Node.js](https://nodejs.org/) - JavaScript runtime environment
+- [Docker](https://www.docker.com/) - Containerization platform
+
+### Installing
+
+Follow these steps to set up and run the project:
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/ejooremmanuel/movies-search-server
+   ```
+
+2. Go to the project directory
+
+```bash
+cd your-project
+```
