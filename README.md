@@ -17,14 +17,32 @@ To run this project, you will need:
 
 Follow these steps to set up and run the project:
 
-1. Clone the repository to your local machine:
+1. Clone the repository (server and client) to your local machine:
 
    ```bash
    git clone https://github.com/ejooremmanuel/movies-search-server
    ```
 
+   ```bash
+   git clone https://github.com/ejooremmanuel/movies-search-client
+   ```
+
+# To start the up the server and project
+
 2. Go to the project directory
 
 ```bash
 cd your-project
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Install dependencies
+
+```bash
+docker-compose up -d
 ```
