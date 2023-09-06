@@ -41,7 +41,7 @@ cd your-project
 npm install
 ```
 
-4. Install dependencies
+4. start the app
 
 ```bash
 docker-compose up -d
